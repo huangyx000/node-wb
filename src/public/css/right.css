@@ -1,0 +1,32 @@
+.right-item {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.right-item .title {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.right-item .user-info .header-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+}
+
+.right-item .user-info .user-name {
+    line-height: 48px;
+    margin-left: 58px;
+}
+
+.right-item .user-list .user-item {
+    width: 49px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.right-item .user-list .user-item img {
+    width: 100%;
+}

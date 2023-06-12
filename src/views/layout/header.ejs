@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+  <link rel="stylesheet" href="../../public/css/main.css">
+  <link rel="stylesheet" href="../../public/css/right.css">
+  <link rel="stylesheet" href="../../public/css/list.css">
+  <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <% if (locals.isNarrow) { %>
+  <!-- 狭窄模式 登录和注册页 -->
+  <style>
+    body {
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 100px;
+    }
+  </style>
+  <% } %>
+
+  <% if (locals.isNav) { %>
+  <!-- 有导航 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <% } %>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- 网络请求 -->
+  <script src="../../public/javascripts/simple-ajax.js"></script>
+
+  <% if (locals.isInputBlob) { %>
+  <link rel="stylesheet" href="../../public/css/jquery.atwho.css">
+  <script src="../../public/javascripts/jquery.atwho.js"></script>
+  <script src="../../public//javascripts/jquery.caret.js"></script>
+  <% } %>
+
+</head>
+
+<body>
+  <!-- 导航 -->
+  <% if (locals.isNav) { %>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">微博</a>
+    <ul class="navbar-nav mr-auto" style="flex-direction: row;">
+      <li class="nav-item">
+        <a class="nav-link" href="/">
+          <i class="fa fa-home"></i>
+          首页
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/profile">
+          <i class="fa fa-user"></i>
+          我的空间
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/square">
+          <i class="fa fa-group"></i>
+          广场
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/settting">
+          <i class="fa fa-gear"></i>
+          设置
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <% } %>

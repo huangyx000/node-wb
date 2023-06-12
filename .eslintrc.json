@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "rules": {
+    "indent": ["error", 4], // 缩进风格
+    "quotes": [
+      // 引号类型
+      "error", // error 或 2
+      "single", // 单引号
+      {
+        "allowTemplateLiterals": true // 允许使用模板字符串
+      }
+    ],
+    "semi": ["error", "never"] // 不使用分号
+  }
+}
